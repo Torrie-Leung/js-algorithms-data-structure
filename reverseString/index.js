@@ -9,7 +9,17 @@ function reverse(str) {
 	// arr.reverse()
 	// const res = arr.join('')
 	// return res
-	return str.split('').reverse().join('')
+
+	// solution1
+	// return str.split('').reverse().join('')
+
+	// solution2
+	let res = ''
+	for(let i = 0; i < str.length; i++){
+		const char = str[i]
+		res = char + res
+	}
+	return res
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
