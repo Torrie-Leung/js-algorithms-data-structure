@@ -25,3 +25,4 @@ time1 = Date.now();
 sumupFor(arg)
 time2 = Date.now();
 console.log(`sumupFor() uses ${(time2 - time1) / 1000} seconds to count ${arg}`) // 11.288 sec
+// Big O only cares about the worst case scenarios and general trends as N approaches Infinity
