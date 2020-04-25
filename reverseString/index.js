@@ -14,12 +14,18 @@ function reverse(str) {
 	// return str.split('').reverse().join('')
 
 	// solution2
-	let res = ''
-	for(let i = 0; i < str.length; i++){
-		const char = str[i]
-		res = char + res
-	}
-	return res
+	// let res = ''
+	// for(let i = 0; i < str.length; i++){
+	// 	const char = str[i]
+	// 	res = char + res
+	// }
+	// return res
+
+	//solution 3- reduce()
+	return str.split('').reduce((output,char) => {
+		output = char + output
+		return output
+	}, '')
 }
 
 // _________ _______  _______ _________   _______  _______  _______  _______  _______
