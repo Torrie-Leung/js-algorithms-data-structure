@@ -11,3 +11,8 @@ function clgColor(color){
 colors.forEach(clgColor)
 
 colors.forEach(color => console.log(color))
+
+const nums = [1,2,3]
+const doubledNums = []
+nums.forEach(num => doubledNums.push(num*2))
+console.log(doubledNums);
