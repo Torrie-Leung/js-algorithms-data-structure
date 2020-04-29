@@ -19,4 +19,10 @@ const squadAgeIncluded = squad.map(ppl => {
   }
 })
 
-console.log(squadAgeIncluded);
+// console.log(squadAgeIncluded);
+
+// remove info
+const perIdOnly = squad.map(ppl => {
+  return ppl.id
+})
+console.log(perIdOnly);
