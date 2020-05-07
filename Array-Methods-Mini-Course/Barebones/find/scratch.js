@@ -15,3 +15,13 @@ const firstFemale = squad.find(person =>{
   return person.gender === 'female';
 })
 console.log(firstFemale);
+
+// under the hood
+let fM;
+for(let i = 0; i < squad.length; i++){
+  if(squad[i].gender === 'male'){
+    fM = squad[i];
+    break;
+  }
+}
+console.log(fM);
